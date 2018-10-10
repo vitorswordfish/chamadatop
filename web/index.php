@@ -57,13 +57,13 @@
 
       <div class="col-md-12">
 
-        <form action="system/controllers/logar.php" method="POST">
+        <form action="system/controllers/marcar_presenca.php" method="POST">
 
             <p class="textocapa">"É muito melhor arriscar coisas grandiosas, alcançar triunfos e glórias, mesmo expondo-se a derrota, do que formar fila com os pobres de espírito que nem gozam muito nem sofrem muito, porque vivem nessa penumbra cinzenta que não conhece vitória nem derrota." -<i> Theodore Roosevelt</i></p>
 
             <div class="form-group">
                 <label for="matricula">Matricula:</label>
-                <input type="matricula" class="form-control" placeholder="Ex:170100XX1" name="matricula" required maxlength="9">
+                <input type="text" class="form-control" placeholder="Ex:170100XX1" name="matricula" required maxlength="9">
              </div>
 
 
