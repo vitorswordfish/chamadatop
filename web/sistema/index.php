@@ -107,7 +107,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/user.png" alt="">Usuário
+                    <img src="images/user.png" alt="">Professor
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -150,19 +150,19 @@
                   <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                     <thead>
                       <tr>
-                        <th>Número</th>
-                        <th>Marca</th>
-                        <th>Tipo</th>
-                        <th>Memória</th>
+                        <th>Aluno</th>
+                        <th>Matrícula</th>
+                        <th>Matéria</th>
+                        <th>Turma</th>
                         <th>Ver</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>0001</td>
-                        <td>Cisco</td>
-                        <td>ICS C-Series 220</td>
-                        <td>3 TeraBytes</td>
+                        <td>Petronio Luiz</td>
+                        <td>100142335</td>
+                        <td>Projeto Transversal 1</td>
+                        <td>A</td>
                         <td>
                           <a>
                           <div class='item_lista'>
