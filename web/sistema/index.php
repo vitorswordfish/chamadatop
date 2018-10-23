@@ -51,7 +51,7 @@
               </div>
               <div class="profile_info">
                 <span>Bem-vindo(a),</span>
-                <h2>Usuário</h2>
+                <h2>Professor</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -137,7 +137,8 @@
                   <h2>Adicionar</h2>
                   <ul class="nav navbar-right panel_toolbox">
                     <li>
-                      <button type="button" class="btn btn-success adicionar">Adicionar</button>
+                      <!-- Botão Modal -->
+                      <button type="button" class="btn btn-primary adicionar" data-toggle="modal" data-target="#modalExemplo">Adicionar Matéria</button>
                     </li>
                   </ul>
                   <div class="clearfix"></div>
@@ -146,6 +147,28 @@
                   <p class="text-muted font-13 m-b-30">
                     
                   </p>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Adicionar Matéria</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
                   <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                     <thead>
