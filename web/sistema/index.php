@@ -127,18 +127,19 @@
             <div class="row">
             <div class="page-title">
               <div class="title_left">
-                <h3>Servidores</h3>
+                <h3> - </h3>
               </div>
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>Adicionar</h2>
+                  <h2>Matérias</h2>
                   <ul class="nav navbar-right panel_toolbox">
                     <li>
                       <!-- Botão Modal -->
                       <button type="button" class="btn btn-primary adicionar" data-toggle="modal" data-target="#modalExemplo">Adicionar Matéria</button>
+                      <!-- /Botão Modal -->
                     </li>
                   </ul>
                   <div class="clearfix"></div>
@@ -159,42 +160,98 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+        
+
+      <form>
+      <div class="form-group">
+        <label for="exampleInputCodigo">Código da Matéria</label>
+        <input type="codigo" class="form-control" id="exampleInputCodigo" placeholder="109592">
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+
+      <div class="form-group">
+        <label for="exampleInputMateria">Matéria</label>
+        <input type="materia" class="form-control" id="exampleInputMateria" placeholder="Projeto Transversal">
+      </div>
+      
+      
+      <div class="form-group">
+      <label for="exampleFormControlSelect1">Departamento</label>
+      <select class="form-control" id="exampleFormDepartamento">
+      
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      </div>
+      
+      
+      <div class="form-group">
+        <label for="exampleInputDepartamento">Departamento</label>
+        <input type="departamento" class="form-control" id="exampleInputDepartamento" placeholder="ENE">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputCodDepartamento">Código do Departamento</label>
+        <input type="coddepartamento" class="form-control" id="exampleInputCodDepartamento" placeholder="163">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputTurma">Turma</label>
+        <input type="turma" class="form-control" id="exampleInputTurma" placeholder="A">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputCredito">Credito</label>
+        <input type="credito" class="form-control" id="exampleInputCredito" placeholder="4">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputHorario">Horário</label>
+        <input type="horario" class="form-control" id="exampleInputHorario" placeholder="seg-14/quar-14">
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleInputVagas">Número de Vagas</label>
+        <input type="vagas" class="form-control" id="exampleInputVagas" placeholder="30">
+      </div>
+
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+      </form>        
+
+
+
+
       </div>
     </div>
   </div>
 </div>
-
+<!-- /Modal -->
 
                   <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                     <thead>
                       <tr>
-                        <th>Aluno</th>
-                        <th>Matrícula</th>
+                        <th>Código</th>
                         <th>Matéria</th>
+                        <th>Departamento</th>
+                        <th>Código do Departamento</th>
                         <th>Turma</th>
-                        <th>Ver</th>
+                        <th>Créditos</th>
+                        <th>Horário</th>
+                        <th>Vagas</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Petronio Luiz</td>
-                        <td>100142335</td>
-                        <td>Projeto Transversal 1</td>
+                        <td>Projeto Transversal</td>
+                        <td>109592</td>
+                        <td>ENE</td>
+                        <td>163</td>
                         <td>A</td>
-                        <td>
-                          <a>
-                          <div class='item_lista'>
-                          <button class='btn btn-success editar btn-xs' data-btn='$id_ata' data-toggle='modal'>
-                          <span class='fa fa-eye'></span>
-                          </button>
-                          </div>
-                          </a>
-                        </td>
+                        <td>seg-14/quar-14</td>
+                        <td>4</td>
+                        <td>30</td>
                       </tr>
                     </tbody>
                   </table>
