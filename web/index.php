@@ -90,7 +90,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                   <div class="form-group">
-                    <label for="materia">Tukjrma</label>
+                    <label for="materia">Turma</label>
                     <select class="form-control">
                       <option>A</option>
                       <option>B</option>
