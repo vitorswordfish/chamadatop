@@ -66,8 +66,8 @@
                 <ul class="nav side-menu">
 
 
-                  <!-- Servidores -->
-                  <li><a><i class="fa fa-database"></i> Servidores <span class="fa fa-chevron-down"></span></a>
+                  <!-- Professor -->
+                  <li><a><i class="fa fa-user"></i> Professor <span class="fa fa-chevron-down"></span></a>
                   </li>
 
 
