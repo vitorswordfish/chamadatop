@@ -70,7 +70,9 @@
                   <li><a><i class="fa fa-user"></i> Professor <span class="fa fa-chevron-down"></span></a>
                   </li>
 
-
+                  <!-- Aluno -->
+                  <li><a><i class="fa fa-book"></i> Aluno <span class="fa fa-chevron-down"></span></a>
+                  </li>
 
                 </ul>
               </div>
