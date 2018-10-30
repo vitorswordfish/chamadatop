@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>MITM - Plataforma de Teste</title>
+    <title>EyeCom</title>
 
     <!-- Bootstrap -->
     <link href="dist/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -114,7 +114,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="#"> Perfil</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
+                    <li><a href="login.php"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
                   </ul>
                 </li>
               </ul>

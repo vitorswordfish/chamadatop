@@ -1,0 +1,19 @@
+@font-face {
+    font-family: reduced;
+    src: url(../fonts/reduced.otf);
+}
+
+@font-face {
+    font-family: unb;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: unbr;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Light.otf);
+}
