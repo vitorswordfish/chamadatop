@@ -7,29 +7,42 @@
 	$link = $objDb->conecta_mysql();
 
 
-	$email = $_POST['email'];
-	$senha = sha1($_POST['senha']);
+	extract($_POST);
 
-	$sql = " select * from `usuario` where email = '$email' AND senha = '$senha' ";
+	$sql2 = " select * from `turmas` where nome = '$materia' AND turma = '$turma' ";
+	$resultado_id2 = mysqli_query($link, $sql2);
+	if($resultado_id2){
+		$dados_usuario2 = mysqli_fetch_array($resultado_id2);
+		if(isset($dados_usuario2['nome'])){
+
+			$_SESSION['id_turma'] = $dados_usuario2['id_materias'];
+			$_SESSION['horario'] = $dados_usuario2['horario'];
+
+		} else {
+			header('Location: ../../?fb=1');
+		}
+	} else {
+		header('Location: ../../?fb=1');
+	}
+
+
+	$sql = " select * from `alunos` where senha = '$senha' AND matricula = '$matricula' ";
 	$resultado_id = mysqli_query($link, $sql);
 
 	if($resultado_id){
 		$dados_usuario = mysqli_fetch_array($resultado_id);
-		if(isset($dados_usuario['email'])){
+		if(isset($dados_usuario['senha'])){
 
-	      $arr = explode(' ',trim($dados_usuario['nome']));
-	      echo $arr[0];
+			$_SESSION['matricula'] = $dados_usuario['matricula'];
+			$_SESSION['id_aluno'] = $dados_usuario['id_aluno'];
 
-			$_SESSION['email'] = $dados_usuario['email'];
-			$_SESSION['id_usuario'] = $dados_usuario['id_usuario'];
-
-			header('Location: ../../usuario.php');
+			header('Location: ../../sistema/chamada/index.php');
 
 
 		} else {
-			header('Location: ../../../zilla/index.php?critico=1');
+			header('Location: ../../?fb=1');
 		}
 	} else {
-		header('Location: ../../../zilla/index.php?critico=1');
+		header('Location: ../../?fb=2');
 	}
 ?>

@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>EyeCom</title>
+    <title>Eyecom</title>
 
     <!-- Bootstrap -->
     <link href="dist/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -66,13 +66,11 @@
                 <ul class="nav side-menu">
 
 
-                  <!-- Professor -->
-                  <li><a><i class="fa fa-user"></i> Professor <span class="fa fa-chevron-down"></span></a>
+                  <!-- Servidores -->
+                  <li><a><i class="fa fa-database"></i> Chamada <span class="fa fa-chevron-down"></span></a>
                   </li>
 
-                  <!-- Aluno -->
-                  <li><a><i class="fa fa-book"></i> Aluno <span class="fa fa-chevron-down"></span></a>
-                  </li>
+
 
                 </ul>
               </div>
@@ -114,7 +112,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="#"> Perfil</a></li>
-                    <li><a href="login.php"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
                   </ul>
                 </li>
               </ul>
@@ -179,86 +177,26 @@
       <div class="form-group">
       <label for="exampleFormControlSelect1">Departamento</label>
       <select class="form-control" id="exampleFormDepartamento">
-        <option>Centro de Apoio ao Desenvolvimento Tecnológico</option>
-        <option>Centro de Desenvolvimento Sustentável</option>
-        <option>Centro de Estudos Avançados e Multidisciplinares</option>
-      	<option>Centro de Excelência em Turismo</option>
-      	<option>Decanato de Ensino de Graduação</option>
-      	<option>Decanato de Extensão</option>
-      	<option>Departamento de Administração</option>
-      	<option>Departamento de Antropologia</option>
-      	<option>Departamento de Artes Cênicas</option>
-        <option>Departamento de Artes Visuais</option>
-      	<option>Departamento de Audiovisuais e Publicidade</option>
-      	<option>Departamento de Biologia Celular</option>
-      	<option>Departamento de Botânica</option>
-      	<option>Departamento de Ciência da Computação</option>
-      	<option>Departamento de Ciências Fisiológicas</option>
-      	<option>Departamento de Comunicação Organizacional</option>
-      	<option>Departamento de Desenho Industrial</option>
-      	<option>Departamento de Ecologia</option>
-      	<option>Departamento de Economia</option>
-      	<option>Departamento de Enfermagem</option>
-      	<option>Departamento de Engenharia Civil e Ambiental</option>
-      	<option>Departamento de Engenharia de Produção</option>
-      	<option>Departamento de Engenharia Elétrica</option>
-      	<option>Departamento de Engenharia Florestal</option>
-      	<option>Departamento de Engenharia Mecânica</option>
-      	<option>Departamento de Estatística</option>
-      	<option>Departamento de Estudos Latino-Americanos</option>
-      	<option>DEPARTAMENTO DE FARMÁCIA</option>
-      	<option>Departamento de Filosofia</option>
-      	<option>Departamento de Fitopatologia</option>
-      	<option>Departamento de Genética e Morfologia</option>
-      	<option>Departamento de Geografia</option>
-      	<option>Departamento de Gestão de Políticas Públicas - GPP</option>
-      	<option>Departamento de História</option>
-      	<option>Departamento de Jornalismo</option>
-      	<option>Departamento de Línguas Estrangeiras e Tradução</option>
-      	<option>Departamento de Linguística, Português, Líng Clás</option>
-      	<option>Departamento de Matemática</option>
-      	<option>Departamento de Métodos e Técnicas</option>
-      	<option>Departamento de Música</option>
-      	<option>Departamento de Nutrição</option>
-      	<option>Departamento de Odontologia</option>
-      	<option>Departamento de Planejamento e Administração</option>
-      	<option>Departamento de Processos Psicologicos Básicos</option>
-      	<option>Departamento de Projetos Expressão e Representação</option>
-      	<option>Departamento de Psic.Escolar e do Desenvolvimento</option>
-        <option>Departamento de Psicologia Clínica</option>
-      	<option>Departamento de Psicologia Social e do Trabalho</option>
-      	<option>Departamento de Saúde Coletiva</option>
-      	<option>Departamento de Serviço Social</option>
-      	<option>Departamento de Sociologia</option>
-      	<option>Departamento de Tecnologia em Arquit. e Urbanismo</option>
-      	<option>Departamento de Teoria e Fundamentos</option>
-      	<option>Departamento de Teoria Literária e Literatura</option>
-      	<option>Departamento de Zoologia</option>
-      	<option>Depto de Ciências Contábeis e Atuariais</option>
-        <option>Depto.de Teoria e Hist.em Arquitetura e Urbanismo</option>
-      	<option>Direção do Instituto Ciências Biológicas</option>
-      	<option>Direção do Instituto de Psicologia</option>
-        <option>Faculd. de Economia, Administração e Contabilidade</option>
-      	<option>Faculdade de Agronomia e Medicina Veterinária</option>
-      	<option>Faculdade de Ciência da Informação</option>
-      	<option>Faculdade de Ciências da Saúde</option>
-      	<option>Faculdade de Direito</option>
-      	<option>Faculdade de Educação</option>
-      	<option>Faculdade de Educação Física</option>
-      	<option>Faculdade de Medicina</option>
-      	<option>Faculdade de Tecnologia</option>
-      	<option>Instituto de Artes</option>
-        <option>Instituto de Ciência Política</option>
-      	<option>Instituto de Ciências Biológicas</option>
-      	<option>Instituto de Ciências Humanas</option>
-      	<option>Instituto de Física</option>
-      	<option>Instituto de Geociências</option>
-      	<option>Instituto de Letras</option>
-      	<option>Instituto de Química</option>
-        <option>Instituto de Relações Internacionais</option>
+      
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
       </select>
       </div>
       
+      
+      <div class="form-group">
+        <label for="exampleInputDepartamento">Departamento</label>
+        <input type="departamento" class="form-control" id="exampleInputDepartamento" placeholder="ENE">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputCodDepartamento">Código do Departamento</label>
+        <input type="coddepartamento" class="form-control" id="exampleInputCodDepartamento" placeholder="163">
+      </div>
+
       <div class="form-group">
         <label for="exampleInputTurma">Turma</label>
         <input type="turma" class="form-control" id="exampleInputTurma" placeholder="A">

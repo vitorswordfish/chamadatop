@@ -1,3 +1,9 @@
+<?php
+
+  extract($_GET);
+
+?>
+
 <!DOCTYPE HTML>
 <html lang="pt-br">
 
@@ -7,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SARC</title>
+    <title>Eyecom</title>
     <link rel="icon" href="system/img/favicon.png">
 
     <!-- JS -->
@@ -57,9 +63,29 @@
 
       <div class="col-md-12">
 
-        <form action="system/controllers/marcar_presenca.php" method="POST">
+        <form action="system/controllers/logar.php" method="POST">
 
             <p class="textocapa">"É muito melhor arriscar coisas grandiosas, alcançar triunfos e glórias, mesmo expondo-se a derrota, do que formar fila com os pobres de espírito que nem gozam muito nem sofrem muito, porque vivem nessa penumbra cinzenta que não conhece vitória nem derrota." -<i> Theodore Roosevelt</i></p>
+
+            <b><p class="textocapa" style="color:red;text-align: center;font-size: 20px!important;">
+              <?php
+
+                  if (isset($fb)){
+                    switch($fb){
+                      case 1:
+                        echo 'A senha e/ou matricula estão incorretas';
+                        break;
+                      case 2:
+                        echo 'Ocorreu um erro crítico no sistema';
+                        break; 
+                      case 3:
+                        echo 'Não está no horário desta aula';
+                        break;
+                    }
+                  }
+
+               ?>
+            </p></b>
 
             <div class="form-group">
                 <label for="matricula">Matricula:</label>
@@ -77,9 +103,9 @@
             <div class="col-md-9 col-sm-9 col-xs-9">
               <div class="form-group">
                 <label for="materia">Disciplina:</label>
-                <select class="form-control">
-                  <option>Proj Transversal 1</option>
-                  <option>Proj Transversal 2</option>
+                <select class="form-control" name="materia">
+                  <option>Projeto Transversal</option>
+                  <option>Computação para Engenharia</option>
                   <option>Lab Arquitetura e Protocolos de Redes</option>
                 </select>
               </div>
@@ -91,7 +117,7 @@
                 <div class="col-md-10">
                   <div class="form-group">
                     <label for="materia">Turma</label>
-                    <select class="form-control">
+                    <select class="form-control" name="turma">
                       <option>A</option>
                       <option>B</option>
                       <option>C</option>
