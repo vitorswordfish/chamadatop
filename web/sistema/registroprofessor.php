@@ -29,9 +29,12 @@
 <body>
 
   <!-- Video de fundo -->
-  <video autoplay muted loop id="myVideo">
-      <source src="../system/videos/video.mp4" type="video/mp4">
-  </video>
+ 
+      <
+
+<body background="images/plano1.jpg" >
+
+
 
 
   <section class="container">
