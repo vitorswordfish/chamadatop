@@ -12,6 +12,8 @@
   $horario = $_SESSION['horario'];
   $id_aluno = $_SESSION['id_aluno'];
   $id_turma = $_SESSION['id_turma'];
+  $nomealuno = $_SESSION['nome'];
+  $curso = $_SESSION['curso'];
   $criptar = sha1($matricula.date('l jS \of F Y z').$horario);
 
 
@@ -28,7 +30,7 @@
         break;
       case 3:
         $start = '13:00:00';
-        $end = '14:00:00';
+        $end = '16:00:00';
         $now = date("H:i:s");
         break;
       case 4:
@@ -38,7 +40,7 @@
         break;
       case 5:
         $start = '17:20:00';
-        $end = '18:00:00';
+        $end = '22:00:00';
         $now = date("H:i:s");
         break;
       case 6:
@@ -140,7 +142,7 @@ if(intervaloEntreDatas($start,$end,$now)){
               </div>
               <div class="profile_info">
                 <span>Bem-vindo(a),</span>
-                <h2>Professor</h2>
+                <h2><?php echo $nomealuno ?></h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -154,12 +156,23 @@ if(intervaloEntreDatas($start,$end,$now)){
 
                 <ul class="nav side-menu">
 
-
-                  <!-- Servidores -->
-                  <li><a><i class="fa fa-database"></i> Chamada <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-home"></i> Professor <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Materias</a></li>
+                      <li><a href="index2.html">Alunos</a></li>
+                      <li><a href="index3.html">Professores</a></li>
+                      <li><a href="index3.html">Presenças</a></li>
+                    </ul>
                   </li>
 
-
+                  <li><a><i class="fa fa-home"></i> Aluno <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Materias</a></li>
+                      <li><a href="index2.html">Alunos</a></li>
+                      <li><a href="index3.html">Professores</a></li>
+                      <li><a href="index3.html">Presenças</a></li>
+                    </ul>
+                  </li>
 
                 </ul>
               </div>
@@ -196,7 +209,7 @@ if(intervaloEntreDatas($start,$end,$now)){
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/user.png" alt="">Professor
+                    <img src="images/user.png" alt=""><?php $nomealuno ?>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">

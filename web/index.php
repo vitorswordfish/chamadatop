@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body onload="localizar()">
 
   <!-- Video de fundo -->
   <video autoplay muted loop id="myVideo">
@@ -81,6 +81,12 @@
                       case 3:
                         echo 'Não está no horário desta aula';
                         break;
+                      case 4:
+                        echo 'Localização desativada ou inválida';
+                        break;
+                      case 5:
+                        echo 'Rede inválida';
+                        break;
                     }
                   }
 
@@ -106,10 +112,13 @@
                 <select class="form-control" name="materia">
                   <option>Projeto Transversal</option>
                   <option>Computação para Engenharia</option>
-                  <option>Lab Arquitetura e Protocolos de Redes</option>
+                  <option>Lab APR</option>
                 </select>
               </div>
             </div>
+
+            <input type="hidden" value="null" id="lat" required" name="latitude">
+            <input type="hidden" value="null" id="long" required" name="longitude">
 
             <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="row">
@@ -158,6 +167,23 @@
   </div>
 
   </section>
+
+  <script>
+
+
+function localizar() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(setPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function setPosition(position) {
+    document.getElementById("lat").value = position.coords.latitude;
+    document.getElementById("long").value = position.coords.longitude;
+}
+</script>
 
 
 

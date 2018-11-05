@@ -22,7 +22,7 @@
  $link = $objDb->conecta_mysql();
 
  $sql = " select * from `sessoes` where token = '$token'";
-$resultado_id = mysqli_query($link, $sql);
+ $resultado_id = mysqli_query($link, $sql);
 
 	if($resultado_id){
 		$dados_usuario = mysqli_fetch_array($resultado_id);
@@ -58,7 +58,7 @@ $resultado_id = mysqli_query($link, $sql);
 		        break;
 		      case 3:
 		        $start = '13:00:00';
-		        $end = '14:00:00';
+		        $end = '16:00:00';
 		        $now = date("H:i:s");
 		        break;
 		      case 4:
