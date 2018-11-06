@@ -175,19 +175,6 @@
       
       
       <div class="form-group">
-      <label for="exampleFormControlSelect1">Departamento</label>
-      <select class="form-control" id="exampleFormDepartamento">
-      
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-      </div>
-      
-      
-      <div class="form-group">
         <label for="exampleInputDepartamento">Departamento</label>
         <input type="departamento" class="form-control" id="exampleInputDepartamento" placeholder="ENE">
       </div>
