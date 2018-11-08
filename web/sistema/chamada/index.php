@@ -1,5 +1,5 @@
 <?php
-
+/*
   session_start();
 
   date_default_timezone_set('America/Sao_Paulo');
@@ -91,8 +91,9 @@ if(intervaloEntreDatas($start,$end,$now)){
   header('Location:../../?fb=3');
 }
   
-
+*/
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
