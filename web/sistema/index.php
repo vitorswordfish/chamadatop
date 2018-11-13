@@ -66,10 +66,20 @@
                 <ul class="nav side-menu">
 
 
-                  <!-- Servidores -->
-                  <li><a><i class="fa fa-database"></i> Chamada <span class="fa fa-chevron-down"></span></a>
+                  <!-- Docente -->
+                  <li><a><i class="fa fa-book"></i> Professor <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="materiasprofessor.php">Matérias</a></li>
+                      <li><a href="chamada.php">Lista de Presença</a></li>
+                    </ul>
                   </li>
 
+                  <!-- Discente -->
+                  <li><a><i class="fa fa-pencil"></i> Aluno <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="materiasaluno.php">Matérias</a></li>
+                    </ul>
+                  </li>
 
 
                 </ul>
