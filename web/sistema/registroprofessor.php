@@ -26,17 +26,7 @@
 
 </head>
 
-<body>
-
-  <!-- Video de fundo -->
- 
-      <
-
 <body background="images/plano1.jpg" >
-
-
-
-
   <section class="container">
 
     <div class="row">
