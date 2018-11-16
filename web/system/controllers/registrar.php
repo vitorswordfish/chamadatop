@@ -6,6 +6,8 @@ require_once('db.class.php');
 $objDb = new db();
 $link = $objDb->conecta_mysql();
 
+$senhac = sha1($senha);
+
 if(isset($departamento)){
 	////////////////////BUSCA NO BD//////////////////////////
 	//faz a busca pelo email no bd para saber se já existe antes de registrar um novo usuario
@@ -20,7 +22,7 @@ if(isset($departamento)){
 	///////////////////INSERT NO BD//////////////////////////////////
 	//se o usuario nao foi encontrado no banco de dados, fazemos a inserção
 	
-	$sql2 = " insert into professores (nome, email, senha, departamento) values ('$nome', '$email', '$senha', '$departamento')";
+	$sql2 = " insert into professores (nome, email, senha, departamento) values ('$nome', '$email', '$senhac', '$departamento')";
 	//executar a query
 	if(mysqli_query($link, $sql2)){
 			header('Location: ../../sistema/cadastrar.php?er=2');
@@ -42,7 +44,7 @@ if(isset($departamento)){
 	///////////////////INSERT NO BD//////////////////////////////////
 	//se o usuario nao foi encontrado no banco de dados, fazemos a inserção
 	
-	$sql2 = " insert into alunos (nome, matricula, curso, senha) values ('$nome', '$matricula', '$curso', '$senha')";
+	$sql2 = " insert into alunos (nome, matricula, curso, senha) values ('$nome', '$matricula', '$curso', '$senhac')";
 	//executar a query
 	if(mysqli_query($link, $sql2)){
 			header('Location: ../../sistema/cadastrar.php?er=2');

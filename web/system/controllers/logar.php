@@ -6,9 +6,27 @@
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
-
 	extract($_POST);
 
+	$senhac = sha1($senha);
+
+	if(isset($email)){
+
+	$sql5 = " select * from `professores` where email = '$email' AND senha = '$senhac' ";
+	$resultado_id5 = mysqli_query($link, $sql5);
+		if($resultado_id5){
+			$_SESSION['nome'] = $dados_usuario5['id_materias'];
+			$_SESSION['email'] = $dados_usuario5['id_materias'];
+			$_SESSION['senha'] = $dados_usuario5['id_materias'];
+			$_SESSION['departamento'] = $dados_usuario5['id_materias'];
+			header('Location: ../../sistema/');
+			die();
+		} else {
+			header('Location: ../../login.php?fb=1');
+			die();
+		}
+
+	}
 	
 
 	echo $latitude; //-15.7635895 labredes
@@ -83,7 +101,7 @@
 	}
 
 
-	$sql = " select * from `alunos` where senha = '$senha' AND matricula = '$matricula' ";
+	$sql = " select * from `alunos` where senha = '$senhac' AND matricula = '$matricula' ";
 	$resultado_id = mysqli_query($link, $sql);
 
 	if($resultado_id){

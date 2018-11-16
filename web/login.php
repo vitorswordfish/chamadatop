@@ -31,7 +31,7 @@
 
 </head>
 
-<body onload="localizar()">
+<body>
 
   <!-- Video de fundo -->
   <video autoplay muted loop id="myVideo">
@@ -96,8 +96,8 @@
             </p></b>
 
             <div class="form-group">
-                <label for="matricula">Matricula:</label>
-                <input type="text" class="form-control" placeholder="Ex:170100XX1" name="matricula" required maxlength="9">
+                <label for="matricula">E-mail:</label>
+                <input type="text" class="form-control" placeholder="Ex:professor@unb.br" name="email" required maxlength="25">
              </div>
 
 
@@ -106,48 +106,13 @@
                 <input type="password" class="form-control" placeholder="*********" name="senha" required maxlength="16">
             </div>
 
-            <div class="row">
-
-            <div class="col-md-9 col-sm-9 col-xs-9">
-              <div class="form-group">
-                <label for="materia">Disciplina:</label>
-                <select class="form-control" name="materia">
-                  <option>Projeto Transversal</option>
-                  <option>Computação para Engenharia</option>
-                  <option>Lab APR</option>
-                </select>
-              </div>
-            </div>
-
-            <input type="hidden" value="null" id="lat" required name="latitude">
-            <input type="hidden" value="null" id="long" required name="longitude">
-
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                  <div class="form-group">
-                    <label for="materia">Turma</label>
-                    <select class="form-control" name="turma">
-                      <option>A</option>
-                      <option>B</option>
-                      <option>C</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-1"></div>
-              </div>
-            </div>
-
-            </div>
-
 
             <p class="textorodape">SARC - Sistema Automatizado de Realização da Chamada<br>
             Projeto Transversal de Redes 1</p>
 
             <div class="row">
               <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-danger" id="botao-confirma" >Marcar presença!</button>
+                <button type="submit" class="btn btn-success" id="botao-confirma" >Logar</button>
               </div>
             </div>
 
@@ -171,34 +136,6 @@
   </div>
 
   </section>
-
-  <script>
-
-
-function localizar() {
-    var x = document.getElementById("#coordenadas");
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(setPosition);
-    } else { 
-        x.innerHTML = "Geolocalização não é suportada por este navegador.";
-    }
-}
-
-function setPosition(position) {
-
-    var x = document.getElementById("coordenadas");
-  
-    document.getElementById("lat").value = position.coords.latitude;
-    document.getElementById("long").value = position.coords.longitude;
-    $('#botao-confirma').removeAttr("disabled");
-    $('#botao-confirma').removeClass("btn-danger");
-    $('#botao-confirma').addClass("btn-primary");
-
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
 
 
 </body>
