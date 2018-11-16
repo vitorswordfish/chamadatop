@@ -14,12 +14,27 @@
 	echo $latitude; //-15.7635895 labredes
 	echo $longitude; //-47.8727133 labredes
 
-	/*if($latitude < -15.7640000 || $latitude > -15.7630000 || $longitude < -47.8730000 || $longitude > -47.8720000){
+	/*if($latitude == 'null' || $longitude = 'null'){
+		header('Location: ../../?fb=7&lat=$latitude');
+		die();
+	}*/
+
+	
+
+	if($latitude < -15.7640000 || $latitude > -15.7630000 || $longitude < -47.8730000 || $longitude > -47.8720000){
 		header('Location: ../../?fb=4');
-	}
+	} // Deixa passar longitude entre 872 e 873| Deixar passar latitude entre 763 e 764*/
 
+	
+	/*
+	if($latitude < -15.7980000 || $latitude > -15.7000000 || $longitude < -47.9990000 || $longitude > -47.0000000){
+		header('Location: ../../?fb=4&$latitude&$longitude');
+	}*/
 
+	$_SESSION['longitude'] = $longitude;
+	$_SESSION['latitude'] = $latitude;
 
+	// Captura do IP de acesso
 	function getUserIP() {
     $ipaddress = '';
     if (isset($_SERVER['HTTP_CLIENT_IP']))
@@ -41,10 +56,13 @@
     return $ipaddress;
 	}
 
-	if(getUserIP() == "164.41.4.26"){
+	//Verificação do IP
+	$_SESSION['ipdousuario'] = getUserIP();
+	if(getUserIP() != '164.41.4.26' && getUserIP() != '::1'){
 		header('Location: ../../?fb=5');
+		die();
 	}
-		*/
+		
 	
 
 

@@ -87,6 +87,8 @@
                       case 5:
                         echo 'Rede inválida';
                         break;
+                      case 7:
+                        echo 'Não foi possível rastrear sua localização, habilite-a no browser.';
                     }
                   }
 
@@ -145,9 +147,11 @@
 
             <div class="row">
               <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Marcar presença!</button>
+                <button type="submit" class="btn btn-danger" id="botao-confirma" >Marcar presença!</button>
               </div>
             </div>
+
+            <p id="coordenadas"></p>
 
         </form>
 
@@ -172,16 +176,26 @@
 
 
 function localizar() {
+    var x = document.getElementById("#coordenadas");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(setPosition);
     } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        x.innerHTML = "Geolocalização não é suportada por este navegador.";
     }
 }
 
 function setPosition(position) {
+
+    var x = document.getElementById("coordenadas");
+  
     document.getElementById("lat").value = position.coords.latitude;
     document.getElementById("long").value = position.coords.longitude;
+    $('#botao-confirma').removeAttr("disabled");
+    $('#botao-confirma').removeClass("btn-danger");
+    $('#botao-confirma').addClass("btn-primary");
+
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
 }
 </script>
 

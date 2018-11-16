@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
     <title>Eyecom</title>
 
@@ -186,82 +186,82 @@
       <option>ANÁLISE DINÂMICA LINEAR</option>
       <option>ARQUITETURA E PROTOCOLOS DE REDES</option>
       <option>AVALIAÇÃO DE DESEMPENHO DE REDES E SISTEMAS</option>
-      <option>CIRCUITOS ELÉTRICOS	</option>
-      <option>CIRCUITOS ELÉTRICOS 1	</option>
-      <option>CIRCUITOS ELÉTRICOS 2	</option>
-      <option>CIRCUITOS POLIFASICOS	</option>
-      <option>COMPUTACAO PARA ENGENHARIA	</option>
-      <option>COMUNICACOES DIGITAIS	</option>
-      <option>CONTROLE DE PROCESSOS	</option>
-      <option>CONTROLE DIGITAL	</option>
-      <option>CONTROLE DINÂMICO	</option>
-      <option>CONTROLE PARA AUTOMAÇÃO	</option>
-      <option>CONVERSÃO DE ENERGIA E MÁQUINAS ELÉTRICAS	</option>
-      <option>CONVERSÃO ELETROMECÂNICA DE ENERGIA	</option>
-      <option>ELETRICIDADE BÁSICA	</option>
-      <option>ELETROMAGNETISMO 1	</option>
-      <option>ELETROMAGNETISMO 2	</option>
-      <option>ELETRÔNICA	</option>
-      <option>ELETRÔNICA 2	</option>
-      <option>ESTÁGIO SUPERVISIONADO EM ENGENHARIA DE COMPUTAÇÃO 1	</option>
-      <option>ESTÁGIO SUPERVISIONADO EM ENGENHARIA DE COMPUTAÇÃO 2	</option>
-      <option>ESTÁGIO SUPERVISIONADO EM ENGENHARIA DE REDES DE COMUNICAÇÃO	</option>
-      <option>FOTÔNICA BÁSICA	</option>
-      <option>FUNDAMENTOS DE REDES	</option>
-      <option>FUNDAMENTOS DE REDES 2	</option>
-      <option>INSTALAÇÕES ELÉTRICAS	</option>
-      <option>INSTRUMENTACAO DE CONTROLE	</option>
-      <option>INSTRUMENTAÇÃO DE CONTROLE DE PROCESSOS	</option>
-      <option>INTRODUÇÃO A ENGENHARIA DE REDES DE COMUNICACÃO	</option>
-      <option>INTRODUCAO A ENGENHARIA ELETRICA	</option>
-      <option>INTRODUÇÃO AO CONTROLE INTELIGENTE NUMÉRICO	</option>
-      <option>INTRODUCAO AO PROJETO DE CIRCUITOS INTEGRADOS	</option>
-      <option>INTRODUÇÃO AOS CIRCUITOS ELÉTRICOS	</option>
-      <option>LABORATÓRIO DE ANÁLISE DINÂMICA LINEAR	</option>
-      <option>LABORATÓRIO DE CIRCUITOS ELÉTRICOS	</option>
-      <option>LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1	</option>
-      <option>LABORATÓRIO DE CIRCUITOS ELÉTRICOS 2	</option>
-      <option>LABORATÓRIO DE CONTROLE DE PROCESSOS	</option>
-      <option>LABORATÓRIO DE CONTROLE DINÂMICO	</option>
-      <option>LABORATÓRIO DE CONVERSÃO DE ENERGIA	</option>
-      <option>LABORATÓRIO DE CONVERSÃO ELETROMECÂNICA DE ENERGIA	</option>
-      <option>LABORATÓRIO DE ELETRICIDADE BÁSICA	</option>
-      <option>LABORATÓRIO DE ELETROMAGNETISMO 2	</option>
-      <option>LABORATÓRIO DE ELETRÔNICA	</option>
-      <option>LABORATÓRIO DE ELETRÔNICA 2	</option>
-      <option>LABORATÓRIO DE INSTALAÇÕES ELÉTRICAS	</option>
-      <option>LABORATÓRIO DE MATERIAIS ELÉTRICOS E MAGNÉTICOS	</option>
-      <option>LABORATÓRIO DE PRINCÍPIOS DE COMUNICAÇÃO	</option>
-      <option>LABORATÓRIO DE REDES	</option>
-      <option>LABORATÓRIO DE SISTEMAS DIGITAIS	</option>
-      <option>LABORATÓRIO DE SISTEMAS ELÉTRICOS DE POTÊNCIA	</option>
-      <option>LABORATÓRIO DE SISTEMAS MICROPROCESSADOS	</option>
-      <option>MATERIAIS ELÉTRICOS E MAGNÉTICOS	</option>
-      <option>METODOLOGIA E DESENVOLVIMENTO DE SOFTWARE	</option>
-      <option>PRINCÍPIOS DE COMUNICAÇÃO	</option>
-      <option>PROJETO FINAL DE GRADUAÇÃO 1	</option>
-      <option>PROJETO FINAL DE GRADUAÇÃO 2	</option>
-      <option>PROJETO FINAL EM ENGENHARIA DE COMPUTAÇÃO 1	</option>
-      <option>PROJETO FINAL EM ENGENHARIA DE COMPUTAÇÃO 2	</option>
-      <option>PROJETO TRANSVERSAL EM REDES DE COMUNICAÇÃO 1	</option>
-      <option>PROJETO TRANSVERSAL EM REDES DE COMUNICAÇÃO 2	</option>
-      <option>PROPAGACAO DE ONDAS ELETROMAGNETICAS	</option>
-      <option>PROTECAO DE SISTEMAS ELETRICOS	</option>
-      <option>PROTOCOLOS DE TRANSPORTE E ROTEAMENTO	</option>
-      <option>REDES LOCAIS	</option>
-      <option>REDES SEM FIO	</option>
-      <option>SEGURANÇA DE REDES	</option>
-      <option>SINAIS E SISTEMAS EM TEMPO CONTÍNUO	</option>
-      <option>SINAIS E SISTEMAS EM TEMPO DISCRETO	</option>
-      <option>SISTEMAS DE COMUNICACOES 1	</option>
-      <option>SISTEMAS DE INFORMAÇÃO DISTRIBUÍDOS	</option>
-      <option>SISTEMAS DIGITAIS	</option>
-      <option>SISTEMAS DIGITAIS 2	</option>
-      <option>SISTEMAS MICROPROCESSADOS	</option>
-      <option>SISTEMAS OPERACIONAIS DE REDES	</option>
-      <option>TOPICOS EM ENGENHARIA	</option>
-      <option>TÓPICOS EM REDES DE COMUNICAÇÃO 3	</option>
-      <option>TÓPICOS ESPECIAIS EM ENGENHARIA BIOMÉDICA	</option>
+      <option>CIRCUITOS ELÉTRICOS </option>
+      <option>CIRCUITOS ELÉTRICOS 1 </option>
+      <option>CIRCUITOS ELÉTRICOS 2 </option>
+      <option>CIRCUITOS POLIFASICOS </option>
+      <option>COMPUTACAO PARA ENGENHARIA  </option>
+      <option>COMUNICACOES DIGITAIS </option>
+      <option>CONTROLE DE PROCESSOS </option>
+      <option>CONTROLE DIGITAL  </option>
+      <option>CONTROLE DINÂMICO </option>
+      <option>CONTROLE PARA AUTOMAÇÃO </option>
+      <option>CONVERSÃO DE ENERGIA E MÁQUINAS ELÉTRICAS </option>
+      <option>CONVERSÃO ELETROMECÂNICA DE ENERGIA </option>
+      <option>ELETRICIDADE BÁSICA </option>
+      <option>ELETROMAGNETISMO 1  </option>
+      <option>ELETROMAGNETISMO 2  </option>
+      <option>ELETRÔNICA  </option>
+      <option>ELETRÔNICA 2  </option>
+      <option>ESTÁGIO SUPERVISIONADO EM ENGENHARIA DE COMPUTAÇÃO 1  </option>
+      <option>ESTÁGIO SUPERVISIONADO EM ENGENHARIA DE COMPUTAÇÃO 2  </option>
+      <option>ESTÁGIO SUPERVISIONADO EM ENGENHARIA DE REDES DE COMUNICAÇÃO  </option>
+      <option>FOTÔNICA BÁSICA </option>
+      <option>FUNDAMENTOS DE REDES  </option>
+      <option>FUNDAMENTOS DE REDES 2  </option>
+      <option>INSTALAÇÕES ELÉTRICAS </option>
+      <option>INSTRUMENTACAO DE CONTROLE  </option>
+      <option>INSTRUMENTAÇÃO DE CONTROLE DE PROCESSOS </option>
+      <option>INTRODUÇÃO A ENGENHARIA DE REDES DE COMUNICACÃO </option>
+      <option>INTRODUCAO A ENGENHARIA ELETRICA  </option>
+      <option>INTRODUÇÃO AO CONTROLE INTELIGENTE NUMÉRICO </option>
+      <option>INTRODUCAO AO PROJETO DE CIRCUITOS INTEGRADOS </option>
+      <option>INTRODUÇÃO AOS CIRCUITOS ELÉTRICOS  </option>
+      <option>LABORATÓRIO DE ANÁLISE DINÂMICA LINEAR  </option>
+      <option>LABORATÓRIO DE CIRCUITOS ELÉTRICOS  </option>
+      <option>LABORATÓRIO DE CIRCUITOS ELÉTRICOS 1  </option>
+      <option>LABORATÓRIO DE CIRCUITOS ELÉTRICOS 2  </option>
+      <option>LABORATÓRIO DE CONTROLE DE PROCESSOS  </option>
+      <option>LABORATÓRIO DE CONTROLE DINÂMICO  </option>
+      <option>LABORATÓRIO DE CONVERSÃO DE ENERGIA </option>
+      <option>LABORATÓRIO DE CONVERSÃO ELETROMECÂNICA DE ENERGIA  </option>
+      <option>LABORATÓRIO DE ELETRICIDADE BÁSICA  </option>
+      <option>LABORATÓRIO DE ELETROMAGNETISMO 2 </option>
+      <option>LABORATÓRIO DE ELETRÔNICA </option>
+      <option>LABORATÓRIO DE ELETRÔNICA 2 </option>
+      <option>LABORATÓRIO DE INSTALAÇÕES ELÉTRICAS  </option>
+      <option>LABORATÓRIO DE MATERIAIS ELÉTRICOS E MAGNÉTICOS </option>
+      <option>LABORATÓRIO DE PRINCÍPIOS DE COMUNICAÇÃO  </option>
+      <option>LABORATÓRIO DE REDES  </option>
+      <option>LABORATÓRIO DE SISTEMAS DIGITAIS  </option>
+      <option>LABORATÓRIO DE SISTEMAS ELÉTRICOS DE POTÊNCIA </option>
+      <option>LABORATÓRIO DE SISTEMAS MICROPROCESSADOS  </option>
+      <option>MATERIAIS ELÉTRICOS E MAGNÉTICOS  </option>
+      <option>METODOLOGIA E DESENVOLVIMENTO DE SOFTWARE </option>
+      <option>PRINCÍPIOS DE COMUNICAÇÃO </option>
+      <option>PROJETO FINAL DE GRADUAÇÃO 1  </option>
+      <option>PROJETO FINAL DE GRADUAÇÃO 2  </option>
+      <option>PROJETO FINAL EM ENGENHARIA DE COMPUTAÇÃO 1 </option>
+      <option>PROJETO FINAL EM ENGENHARIA DE COMPUTAÇÃO 2 </option>
+      <option>PROJETO TRANSVERSAL EM REDES DE COMUNICAÇÃO 1 </option>
+      <option>PROJETO TRANSVERSAL EM REDES DE COMUNICAÇÃO 2 </option>
+      <option>PROPAGACAO DE ONDAS ELETROMAGNETICAS  </option>
+      <option>PROTECAO DE SISTEMAS ELETRICOS  </option>
+      <option>PROTOCOLOS DE TRANSPORTE E ROTEAMENTO </option>
+      <option>REDES LOCAIS  </option>
+      <option>REDES SEM FIO </option>
+      <option>SEGURANÇA DE REDES  </option>
+      <option>SINAIS E SISTEMAS EM TEMPO CONTÍNUO </option>
+      <option>SINAIS E SISTEMAS EM TEMPO DISCRETO </option>
+      <option>SISTEMAS DE COMUNICACOES 1  </option>
+      <option>SISTEMAS DE INFORMAÇÃO DISTRIBUÍDOS </option>
+      <option>SISTEMAS DIGITAIS </option>
+      <option>SISTEMAS DIGITAIS 2 </option>
+      <option>SISTEMAS MICROPROCESSADOS </option>
+      <option>SISTEMAS OPERACIONAIS DE REDES  </option>
+      <option>TOPICOS EM ENGENHARIA </option>
+      <option>TÓPICOS EM REDES DE COMUNICAÇÃO 3 </option>
+      <option>TÓPICOS ESPECIAIS EM ENGENHARIA BIOMÉDICA </option>
       <option>TRABALHO DE CONCLUSÃO DE CURSO 1</option>
       <option>TRABALHO DE CONCLUSÃO DE CURSO 2</option>
       </select>

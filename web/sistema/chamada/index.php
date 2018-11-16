@@ -1,5 +1,5 @@
 <?php
-/*
+
   session_start();
 
   date_default_timezone_set('America/Sao_Paulo');
@@ -8,6 +8,7 @@
     header('Location: ../../erro.php');
   }
 
+  $sucesso_inserir = false;
   $matricula = $_SESSION['matricula'];
   $horario = $_SESSION['horario'];
   $id_aluno = $_SESSION['id_aluno'];
@@ -29,7 +30,7 @@
         $now = date("H:i:s");
         break;
       case 3:
-        $start = '13:00:00';
+        $start = '12:00:00';
         $end = '16:00:00';
         $now = date("H:i:s");
         break;
@@ -79,6 +80,7 @@ if(intervaloEntreDatas($start,$end,$now)){
       $sql2 = " insert into sessoes (turmas_id_materias, alunos_id_aluno, hora, presenca, token) values ('$id_turma', '$id_aluno', '$horario', '0', '$criptar')";
       if(mysqli_query($link, $sql2)){
         //sucesso
+        $sucesso_inserir = true;
       } else {
         //falha
         header('Location: ../../?fb=2');
@@ -89,11 +91,14 @@ if(intervaloEntreDatas($start,$end,$now)){
   }
 }else{
   header('Location:../../?fb=3');
+  /*echo $start;
+  echo $end;
+  echo $now;
+  echo intervaloEntreDatas($start,$end,$now);*/
 }
   
-*/
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -127,6 +132,13 @@ if(intervaloEntreDatas($start,$end,$now)){
     <link href="../dist/build/css/custom.css" rel="stylesheet">
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <style>
+        .depurar{
+          font-size: 16px!important;
+        }
+
+     </style>
   </head>
 
   <body class="nav-md">
@@ -227,7 +239,24 @@ if(intervaloEntreDatas($start,$end,$now)){
         <div class="right_col" role="main">
 
           <div>
-            <?php echo $code; ?>
+            <?php echo $code; 
+              echo '<br><span class="depurar">';
+              echo '<b>Informações de depuração:</b>';
+              echo '<br>Hora de fechamento: ';echo $end;
+              echo '<br>Hora atual: ';echo $now;
+              echo '<br>Intervalo entre as datas: ';echo intervaloEntreDatas($start,$end,$now);
+              echo '<br>Matricula: '; echo $matricula;
+              echo '<br>Horario:'; echo $horario;
+              echo '<br>Curso:'; echo $curso;
+              echo '<br>Token:'; echo $criptar;
+              echo '<br>IP do usuário:'; echo $_SESSION['ipdousuario'];
+              echo '<br>Token:'; echo $criptar;
+              echo '<br>Longitude:'; echo $_SESSION['longitude'];
+              echo '<br>Latitude:'; echo $_SESSION['latitude'];
+              echo '<br>Sucesso de sessão:'; echo $sucesso_inserir;
+              echo '</span>';
+
+            ?>
           </div>
 
 
