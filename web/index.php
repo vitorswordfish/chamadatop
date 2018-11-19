@@ -60,7 +60,7 @@
 
     <div class="row">
 
-        <img src="system/img/chamada.png" class="logo img-fluid">
+        <img src="system/img/chamada.png" class="logo logo-text img-fluid">
 
     </div>
 
