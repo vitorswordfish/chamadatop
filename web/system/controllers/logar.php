@@ -31,17 +31,11 @@
 
 	echo $latitude; //-15.7635895 labredes
 	echo $longitude; //-47.8727133 labredes
-
-	/*if($latitude == 'null' || $longitude = 'null'){
-		header('Location: ../../?fb=7&lat=$latitude');
-		die();
-	}*/
-
 	
-
+	
 	if($latitude < -15.7640000 || $latitude > -15.7630000 || $longitude < -47.8730000 || $longitude > -47.8720000){
 		header('Location: ../../?fb=4');
-	} // Deixa passar longitude entre 872 e 873| Deixar passar latitude entre 763 e 764*/
+	} // Deixa passar longitude entre 872 e 873| Deixar passar latitude entre 763 e 764
 
 	
 	/*
@@ -81,25 +75,6 @@
 		die();
 	}
 		
-	
-
-
-	$sql2 = " select * from `turmas` where nome = '$materia' AND turma = '$turma' ";
-	$resultado_id2 = mysqli_query($link, $sql2);
-	if($resultado_id2){
-		$dados_usuario2 = mysqli_fetch_array($resultado_id2);
-		if(isset($dados_usuario2['nome'])){
-
-			$_SESSION['id_turma'] = $dados_usuario2['id_materias'];
-			$_SESSION['horario'] = $dados_usuario2['horario'];
-
-		} else {
-			header('Location: ../../?fb=1');
-		}
-	} else {
-		header('Location: ../../?fb=1');
-	}
-
 
 	$sql = " select * from `alunos` where senha = '$senhac' AND matricula = '$matricula' ";
 	$resultado_id = mysqli_query($link, $sql);
@@ -110,10 +85,11 @@
 
 			$_SESSION['matricula'] = $dados_usuario['matricula'];
 			$_SESSION['id_aluno'] = $dados_usuario['id_aluno'];
+			$id_aluno = $dados_usuario['id_aluno'];
 			$_SESSION['nome'] = $dados_usuario['nome'];
 			$_SESSION['curso'] = $dados_usuario['curso'];
 
-			header('Location: ../../sistema/chamada/index.php');
+			
 
 
 		} else {
@@ -122,4 +98,27 @@
 	} else {
 		header('Location: ../../?fb=2');
 	}
+	
+
+
+	$sql2 = " select * from `turmas` where nome = '$materia' AND turma = '$turma' AND alunos_id_aluno = '$id_aluno'";
+	$resultado_id2 = mysqli_query($link, $sql2);
+	if($resultado_id2){
+		$dados_usuario2 = mysqli_fetch_array($resultado_id2);
+		if(isset($dados_usuario2['nome'])){
+
+			$_SESSION['id_turma'] = $dados_usuario2['id_materias'];
+			$_SESSION['horario'] = $dados_usuario2['horario'];
+
+			header('Location: ../../sistema/chamada/index.php');
+
+		} else {
+			header('Location: ../../?fb=1');
+		}
+	} else {
+		header('Location: ../../?fb=1');
+	}
+
+
+	
 ?>

@@ -77,7 +77,7 @@ if(intervaloEntreDatas($start,$end,$now)){
       //pular a inserção de novo token
     }else{
       //cria o token
-      $sql2 = " insert into sessoes (turmas_id_materias, alunos_id_aluno, hora, presenca, token) values ('$id_turma', '$id_aluno', '$horario', '0', '$criptar')";
+      $sql2 = " insert into sessoes (turmas_id_materias, alunos_id_aluno, hora, presenca, token, data) values ('$id_turma', '$id_aluno', '$horario', '0', '$criptar', '$now')";
       if(mysqli_query($link, $sql2)){
         //sucesso
         $sucesso_inserir = true;
@@ -130,6 +130,8 @@ if(intervaloEntreDatas($start,$end,$now)){
 
     <!-- Custom Theme Style -->
     <link href="../dist/build/css/custom.css" rel="stylesheet">
+
+    
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -311,6 +313,56 @@ if(intervaloEntreDatas($start,$end,$now)){
     <!-- bootstrap-daterangepicker -->
     <script src="../dist/vendors/moment/min/moment.min.js"></script>
     <script src="../dist/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Datatables -->
+    <script src="../dist/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../dist/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../dist/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../dist/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../dist/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../dist/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../dist/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../dist/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../dist/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../dist/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../dist/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../dist/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../dist/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../dist/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../dist/vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <script type="text/javascript">
+      
+      $(document).ready(function() {
+$('#datatable-responsive').DataTable( {
+    "language": {
+      "sEmptyTable": "Nenhum registro encontrado",
+      "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+      "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
+      "sInfoFiltered": "(Filtrados de _MAX_ registros)",
+      "sInfoPostFix": "",
+      "sInfoThousands": ".",
+      "sLengthMenu": "_MENU_ resultados por página",
+      "sLoadingRecords": "Carregando...",
+      "sProcessing": "Processando...",
+      "sZeroRecords": "Nenhum registro encontrado",
+      "sSearch": "Pesquisar",
+      "oPaginate": {
+        "sNext": "Próximo",
+        "sPrevious": "Anterior",
+        "sFirst": "Primeiro",
+        "sLast": "Último"
+      },
+      "oAria": {
+        "sSortAscending": ": Ordenar colunas de forma ascendente",
+        "sSortDescending": ": Ordenar colunas de forma descendente"
+      }
+    }
+} );
+} );
+
+      
+    </script>
 
     <!-- Custom Theme Scripts -->
     <script src="../dist/build/js/custom.min.js"></script>
