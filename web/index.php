@@ -143,11 +143,13 @@
 
 
             <p class="textorodape">SARC - Sistema Automatizado de Realização da Chamada<br>
-            Projeto Transversal de Redes 1</p>
+            Projeto Transversal de Redes 1<br>
+            <br>
+            <a href="index.php">Chamada | </a><a href="login.php">Login | </a><a href="sistema/cadastrar.php">Cadastrar</a>
 
             <div class="row">
               <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-danger" id="botao-confirma" >Marcar presença!</button>
+                <button type="submit" class="btn btn-danger" id="botao-confirma" disabled>Marcar presença!</button>
               </div>
             </div>
 
