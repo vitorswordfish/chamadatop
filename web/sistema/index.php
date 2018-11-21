@@ -76,7 +76,6 @@
                   <!-- Docente -->
                   <li><a><i class="fa fa-book"></i> Professor <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="index.php">Matérias</a></li>
                       <li><a href="chamada.php">Lista de Presença</a></li>
                     </ul>
                   </li>
@@ -84,7 +83,7 @@
                   <!-- Discente -->
                   <li><a><i class="fa fa-pencil"></i> Aluno <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="materiasaluno.php">Matérias</a></li>
+                      <li><a href="materias.php">Matérias</a></li>
                     </ul>
                   </li>
 
