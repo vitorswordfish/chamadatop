@@ -53,9 +53,15 @@
     <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-4">
-        <img src="system/img/unb.png" class="logo img-fluid">
+        <img src="system/img/logo.png" class="logo img-fluid">
       </div>
       <div class="col-md-4"></div>
+    </div>
+
+    <div class="row">
+
+        <img src="system/img/chamada.png" class="logo logo-text img-fluid">
+
     </div>
 
     <div class="row">
@@ -77,7 +83,7 @@
                         break;
                       case 2:
                         echo 'Ocorreu um erro crítico no sistema';
-                        break; 
+                        break;
                       case 3:
                         echo 'Não está no horário desta aula';
                         break;
@@ -181,7 +187,7 @@ function localizar() {
     var x = document.getElementById("#coordenadas");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(setPosition);
-    } else { 
+    } else {
         x.innerHTML = "Geolocalização não é suportada por este navegador.";
     }
 }
@@ -189,14 +195,14 @@ function localizar() {
 function setPosition(position) {
 
     var x = document.getElementById("coordenadas");
-  
+
     document.getElementById("lat").value = position.coords.latitude;
     document.getElementById("long").value = position.coords.longitude;
     $('#botao-confirma').removeAttr("disabled");
     $('#botao-confirma').removeClass("btn-danger");
     $('#botao-confirma').addClass("btn-primary");
 
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    x.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
 }
 </script>
