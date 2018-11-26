@@ -181,7 +181,7 @@
 <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
   <script>
 
-
+window.onload = localizar();
 function localizar() {
     var x = document.getElementById("#coordenadas");
     if (navigator.geolocation) {
@@ -200,11 +200,6 @@ function setPosition(position) {
     $('#botao-confirma').removeAttr("disabled");
     $('#botao-confirma').removeClass("btn-danger");
     $('#botao-confirma').addClass("btn-primary");
-    $('#botao-confirma').click(function{
-      console.log("ai que susto");
-      // $.LoadingOverlay("show");
-
-    });
 
     x.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
