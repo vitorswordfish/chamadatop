@@ -50,13 +50,18 @@
 
     <div class="corpo_secundario">
 
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <img src="system/img/unb.png" class="logo img-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <img src="system/img/logo.png" class="logo img-fluid">
+        </div>
+        <div class="col-md-4"></div>
       </div>
-      <div class="col-md-4"></div>
-    </div>
+
+      <div class="row">
+          <img src="system/img/chamada.png" class="logo logo-text img-fluid">
+      </div>
+
 
     <div class="row">
 
@@ -77,7 +82,7 @@
                         break;
                       case 2:
                         echo 'Ocorreu um erro crítico no sistema';
-                        break; 
+                        break;
                       case 3:
                         echo 'Não está no horário desta aula';
                         break;

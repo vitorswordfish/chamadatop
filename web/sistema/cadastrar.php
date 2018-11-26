@@ -44,21 +44,25 @@
 
     <div class="corpo_secundario">
 
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <img src="images/unb.png" class="logo img-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <img src="../system/img/logo.png" class="logo img-fluid">
+        </div>
+        <div class="col-md-4"></div>
       </div>
-      <div class="col-md-4"></div>
-    </div>
+
+      <div class="row">
+          <img src="../system/img/chamada.png" class="logo logo-text img-fluid">
+      </div>
 
     <div class="row">
 
 
       <div class="col-md-12">
 
-        
-          
+
+
           <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-aluno-tab" data-toggle="tab" href="#nav-aluno" role="tab" aria-controls="nav-aluno" aria-selected="false">Aluno</a>
@@ -67,7 +71,7 @@
 </nav>
 
 </div>
-          
+
           <p class="textocapa">"É muito melhor arriscar coisas grandiosas, alcançar triunfos e glórias, mesmo expondo-se a derrota, do que formar fila com os pobres de espírito que nem gozam muito nem sofrem muito, porque vivem nessa penumbra cinzenta que não conhece vitória nem derrota." -<i> Theodore Roosevelt</i></p>
 
           <b><p class="textocapa" style="color:blue;text-align: center;font-size: 20px!important;
@@ -82,21 +86,21 @@
                         break;
                       case 2:
                         echo 'Usuário cadastrado com sucesso!';
-                        break; 
+                        break;
                     }
                   }
 
                ?>
          </p></b>
-          
+
   </div>
 
 
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane active" id="nav-aluno" role="tabpanel" aria-labelledby="nav-aluno-tab"><div class="col-md-12">
 
-<form action="../system/controllers/registrar.php" method="POST">            
-            
+<form action="../system/controllers/registrar.php" method="POST">
+
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" placeholder="Ex: Marcos Augusto" name="nome">
@@ -140,7 +144,7 @@
 
 
 
-            <p class="textorodape">EyeCom - Automatization & Security 
+            <p class="textorodape">EyeCom - Automatization & Security
             <br>
             <a href="../index.php">Chamada | </a><a href="../login.php">Login | </a><a href="cadastrar.php">Cadastrar</a></p>
 
@@ -157,7 +161,7 @@
   <div class="tab-pane fade" id="nav-prof" role="tabpanel" aria-labelledby="nav-prof-tab"><div class="col-md-12">
 
 <form action="../system/controllers/registrar.php" method="POST">
-                        
+
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" placeholder="Ex: Marcos Augusto" name="nome">
@@ -250,7 +254,7 @@
         <option>Instituto de Relações Internacionais</option>
       </select>
     </div>
-    
+
             <div class="form-group">
                 <label for="senha">Senha:</label>
                 <input type="password" class="form-control" placeholder="*********" name="senha" required maxlength="16">

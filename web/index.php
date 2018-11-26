@@ -59,9 +59,7 @@
     </div>
 
     <div class="row">
-
         <img src="system/img/chamada.png" class="logo logo-text img-fluid">
-
     </div>
 
     <div class="row">
@@ -180,6 +178,7 @@
 
   </section>
 
+<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
   <script>
 
 
@@ -201,11 +200,17 @@ function setPosition(position) {
     $('#botao-confirma').removeAttr("disabled");
     $('#botao-confirma').removeClass("btn-danger");
     $('#botao-confirma').addClass("btn-primary");
+    $('#botao-confirma').click(function{
+      console.log("ai que susto");
+      // $.LoadingOverlay("show");
+
+    });
 
     x.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
 }
 </script>
+
 
 
 
